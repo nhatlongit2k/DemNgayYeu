@@ -39,7 +39,7 @@ public class NgayYeuServices extends Service {
         Notification notification = new NotificationCompat.Builder(this, App.CHANNEL_ID)
                 .setContentTitle("Số ngày yêu của 2 bạn <3")
                 .setContentText(String.valueOf(ngayYeu))
-                .setSmallIcon(R.drawable.iconnotification)
+                .setSmallIcon(R.drawable.iconnoti)
                 .setContentIntent(pendingIntent)
                 .build();
 
@@ -62,7 +62,7 @@ public class NgayYeuServices extends Service {
                         Notification notification = new NotificationCompat.Builder(NgayYeuServices.this, App.CHANNEL_ID)
                                 .setContentTitle("Số ngày yêu của 2 bạn <3")
                                 .setContentText(String.valueOf(ngayYeu))
-                                .setSmallIcon(R.drawable.iconnotification)
+                                .setSmallIcon(R.drawable.iconnoti)
                                 .setContentIntent(pendingIntent)
                                 .build();
                         startForeground(1, notification);
